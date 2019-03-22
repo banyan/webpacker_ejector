@@ -1,8 +1,13 @@
-# WebpackerEjector
+# webpacker_ejector
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/webpacker_ejector`. To experiment with that code, run `bin/console` for an interactive prompt.
+A generator to eject webpack from Rails.
 
-TODO: Delete this and the text above, and describe your gem
+Tried to add this feature into webpacker on [this](https://github.com/rails/webpacker/pull/1916) but it's difficult to be merged as following reasons.
+
+* Due to current implementation of webapcker, generate webpack config dynamically is not available.
+* Double maintenance template and webpacker's code is hard.
+
+So I've extracted as generator for now.
 
 ## Installation
 
@@ -12,17 +17,11 @@ Add this line to your application's Gemfile:
 gem 'webpacker_ejector'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install webpacker_ejector
-
 ## Usage
 
-TODO: Write usage instructions here
+```
+bundle exec rails generate webpacker_ejector:eject
+```
 
 ## Development
 
