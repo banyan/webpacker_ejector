@@ -4,7 +4,7 @@ A generator to eject webpack from Rails.
 
 Tried to add this feature into webpacker on [this](https://github.com/rails/webpacker/pull/1916) but it's difficult to be merged as following reasons.
 
-* Due to current implementation of webapcker, generate webpack config dynamically is not available.
+* Due to current implementation of webpacker, generate webpack config dynamically is not available.
 * Double maintenance template and webpacker's code is hard.
 
 So I've extracted as generator for now.
